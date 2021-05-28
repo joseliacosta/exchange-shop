@@ -1,1 +1,3 @@
-# exchange-shop
+# 🏦 Exchange shop
+
+🚧 work in progress 🚧
