@@ -16,7 +16,10 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "lint": "eslint --ignore-path .gitignore --ext .js,.jsx"
+    "lint": "eslint --ignore-path .gitignore --ext .js,.jsx",
+    "prettier": "prettier --ignore-path .gitignore \"**/*.+(js|json|jsx)\"",
+    "format": "yarn prettier -- --write",
+    "check-format": "npm prettier -- --list-different"
   },
   "eslintConfig": {
     "extends": [
@@ -37,6 +40,8 @@
     ]
   },
   "devDependencies": {
-    "eslint": "7.27.0"
+    "eslint": "7.27.0",
+    "eslint-config-prettier": "8.3.0",
+    "prettier": "2.3.0"
   }
 }
