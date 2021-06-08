@@ -3,7 +3,11 @@ import Main from '.'
 
 describe('Main Component', () => {
   it('should render a main title', () => {
-    render(<Main />)
+    render(
+      <Main>
+        <div />
+      </Main>,
+    )
     expect(screen.getByRole('heading')).toBeInTheDocument()
   })
 })

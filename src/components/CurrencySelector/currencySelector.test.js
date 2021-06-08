@@ -19,7 +19,11 @@ describe('CurrencySelector Component', () => {
       },
     ]
     render(
-      <CurrencySelector currencies={currenciesMock} onChange={onChangeMock} />,
+      <CurrencySelector
+        name="Currency Base"
+        currencies={currenciesMock}
+        onChange={onChangeMock}
+      />,
     )
     fireEvent.change(screen.getByRole('combobox'), {
       target: { value: 'USD' },
