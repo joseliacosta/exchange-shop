@@ -1,6 +1,6 @@
 import * as S from './styles'
 import PropTypes from 'prop-types'
-const CurrencySelector = ({ name, currencies, onChange }) => {
+const CurrencySelect = ({ name, currencies, onChange }) => {
   return (
     <S.Label htmlFor={name}>
       {name}
@@ -16,8 +16,8 @@ const CurrencySelector = ({ name, currencies, onChange }) => {
   )
 }
 
-export default CurrencySelector
-CurrencySelector.propTypes = {
+export default CurrencySelect
+CurrencySelect.propTypes = {
   name: PropTypes.string.isRequired,
   currencies: PropTypes.array.isRequired,
   onChange: PropTypes.func.isRequired,

@@ -2,9 +2,9 @@ import React from 'react'
 import exchange from './services/exchange/exchange'
 import { getSymbols, getRates } from './services/fetchApi/fetchAPI'
 import Main from './components/main'
-import CurrencySelector from './components/currencySelector'
 import Input from './components/input'
 import Form from './components/form'
+import CurrencySelect from './components/currencySelector/index'
 
 export default class App extends React.Component {
   constructor(props) {
@@ -73,13 +73,13 @@ export default class App extends React.Component {
             onChange={this.handleAmount}
           />
 
-          <CurrencySelector
+          <CurrencySelect
             name={'Select a currency base'}
             onChange={this.handleBaseCurrency}
             currencies={currencies}
           />
 
-          <CurrencySelector
+          <CurrencySelect
             name={'Select a currency destiny'}
             onChange={this.handleTargetCurrency}
             currencies={currencies}
