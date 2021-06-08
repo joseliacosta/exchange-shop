@@ -1,4 +1,5 @@
 import * as S from './styles'
+import PropTypes from 'prop-types'
 
 const Main = ({ children }) => {
   return (
@@ -12,3 +13,6 @@ const Main = ({ children }) => {
 }
 
 export default Main
+Main.propTypes = {
+  children: PropTypes.element.optional,
+}
