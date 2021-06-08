@@ -1,16 +1,32 @@
 {
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "jest": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "eslint-config-prettier"
+  ],
   "parserOptions": {
-    "ecmaVersion": 2019,
-    "sourceType": "module",
     "ecmaFeatures": {
       "jsx": true
-    }
+    },
+    "ecmaVersion": 12,
+    "sourceType": "module"
   },
-  "extends": ["eslint:recommended", "eslint-config-prettier"],
+  "plugins": ["react"],
   "rules": {
-    "strict": ["error", "never"]
-  },
-  "env": {
-    "browser": true
+    "react/jsx-filename-extension": [
+      1,
+      {
+        "extensions": [".js", ".jsx"]
+      }
+    ],
+    "global-require": "off",
+    "import/prefer-default-export": "off",
+    "no-unused-expressions": ["error", { "allowTaggedTemplates": true }],
+    "react/react-in-jsx-scope": "off"
   }
 }
