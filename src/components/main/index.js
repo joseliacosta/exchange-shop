@@ -14,5 +14,5 @@ const Main = ({ children }) => {
 
 export default Main
 Main.propTypes = {
-  children: PropTypes.element.optional,
+  children: PropTypes.node.isRequired,
 }
