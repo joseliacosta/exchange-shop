@@ -1,7 +1,7 @@
 import { fireEvent, render, screen } from '@testing-library/react'
-import CurrencySelector from '.'
+import CurrencySelect from '.'
 
-describe('CurrencySelector Component', () => {
+describe('CurrencySelect Component', () => {
   it('calls onChange function from parent', () => {
     const onChangeMock = jest.fn()
     const currenciesMock = [
@@ -19,7 +19,7 @@ describe('CurrencySelector Component', () => {
       },
     ]
     render(
-      <CurrencySelector
+      <CurrencySelect
         name="Currency Base"
         currencies={currenciesMock}
         onChange={onChangeMock}

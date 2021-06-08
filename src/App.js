@@ -4,7 +4,7 @@ import { getSymbols, getRates } from './services/fetchApi/fetchAPI'
 import Main from './components/main'
 import Input from './components/input'
 import Form from './components/form'
-import CurrencySelect from './components/currencySelector/index'
+import CurrencySelect from './components/currencySelect/index'
 
 export default class App extends React.Component {
   constructor(props) {
