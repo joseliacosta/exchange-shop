@@ -90,17 +90,17 @@ example:
 
 #### Features:
 
-- [] Ability to perform multiple conversions at the same time
-- [] Option to select a different date for the conversion rate
-- [] Bidirectional conversion (user can input either source or target amount)
-- [] Show historical rates evolution (e.g. with chart) Tech debts:
+-[] Ability to perform multiple conversions at the same time
+-[] Option to select a different date for the conversion rate
+-[] Bidirectional conversion (user can input either source or target amount)
+-[] Show historical rates evolution (e.g. with chart) Tech debts:
 
 #### Tech Debts:
 
-- [] Raise test coverage
-- [] Replace class component to React Hooks
-- [] Mask to format amount input as currency
-- [] Show symbols of currencies on converted value format (e.g. €, £)
+- [ ] Raise test coverage
+- [ ] Replace class component to React Hooks
+- [ ] Mask to format amount input as currency
+- [ ] Show symbols of currencies on converted value format (e.g. €, £)
 
 ### Issues
 Looking to contribute? I will be very happy to see the [First Issue](https://github.com/joseliacosta/exchange-shop/issues)
